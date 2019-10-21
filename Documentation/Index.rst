@@ -18,7 +18,7 @@ Cookiebot
     2019
 
 :Author:
-    |author|
+    Matthias Pruy <dev@mjpr.de>
 
 :License:
     This extension documentation is published under the `Open Content License < http://www.opencontent.org/opl.shtml>`_.

@@ -6,7 +6,7 @@ Cookiebot
     cookiebot
 
 :Version:
-    1.0.1
+    |release|
 
 :Language:
     en

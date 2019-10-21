@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="de" datatype="plaintext" original="messages" date="16.02.17T17:38Z" product-name="cookiebot">
+        <header/>
+        <body>
+            <trans-unit id="apikeyerror" xml:space="preserve">
+                <source>Configuration-Error: Please add a valid cookiebot api-key.</source>
+                <target>Konfigurations-Fehler: Bitte hinterlegen Sie einen gültigen Cookiebot-API-Key.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

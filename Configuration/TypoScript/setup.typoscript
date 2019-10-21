@@ -1,0 +1,21 @@
+
+plugin.tx_cookiebot_cookiebot {
+    view {
+        templateRootPaths.0 = EXT:{extension.shortExtensionKey}/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_cookiebot_cookiebot.view.templateRootPath}
+        partialRootPaths.0 = EXT:cookiebot/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_cookiebot_cookiebot.view.partialRootPath}
+        layoutRootPaths.0 = EXT:tx_cookiebot/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_cookiebot_cookiebot.view.layoutRootPath}
+    }
+	settings {
+		apikey = {$plugin.tx_cookiebot_cookiebot.settings.apikey}
+	}
+}
+
+page.headerData {   
+    600 = TEXT
+    600.value(
+        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="{$plugin.tx_cookiebot_cookiebot.settings.apikey}" data-blockingmode="auto" type="text/javascript"></script>       
+    )    
+}

@@ -1,0 +1,15 @@
+
+plugin.tx_cookiebot_cookiebot {
+    view {
+        # cat=plugin.tx_cookiebot_cookiebot/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:cookiebot/Resources/Private/Templates/
+        # cat=plugin.tx_cookiebot_cookiebot/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:cookiebot/Resources/Private/Partials/
+        # cat=plugin.tx_cookiebot_cookiebot/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:cookiebot/Resources/Private/Layouts/
+    }
+	settings {
+		# cat=plugin.tx_cookiebot_cookiebot//a; type=string; label=Cookiebot API-Key
+		apikey = 
+	}
+}

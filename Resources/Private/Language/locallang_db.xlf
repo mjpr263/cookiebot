@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-10-15T22:46:37Z" product-name="cookiebot">
+		<header/>
+		<body>
+			<trans-unit id="tx_cookiebot_cookiebot.name">
+				<source>Cookiebot</source>
+			</trans-unit>
+			<trans-unit id="tx_cookiebot_cookiebot.description">
+				<source>Implement cookiebot in TYPO3</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

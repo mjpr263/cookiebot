@@ -12,7 +12,7 @@ Cookiebot
     en
 
 :Keywords:
-    cookie, cookiebot
+    cookie
 
 :Copyright:
     2019
@@ -21,7 +21,7 @@ Cookiebot
     Matthias Pruy <dev@mjpr.de>
 
 :License:
-    This extension documentation is published under the `Open Content License < http://www.opencontent.org/opl.shtml>`_.
+    This extension documentation is published under the `Open Content License <http://www.opencontent.org/opl.shtml>`_.
 
 **Table of Contents**
 

@@ -19,7 +19,7 @@ Releases
 Bugs and Known Issues
 ---------------------
 
-Found a Bug? Report it over `Github <https://github.com/mjpr263/cookiebot/issues>`_
+Found a Bug? Report it over `Github Issuetracker <https://github.com/mjpr263/cookiebot/issues>`_
 
 What does it do?
 ----------------

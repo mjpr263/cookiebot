@@ -3,13 +3,11 @@
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. include:: ../_IncludedDirectives.rst
-
 .. _administratormanual:
 
-============
+====================
 Administrator manual
-============
+====================
 
 1. Installation
 ===============

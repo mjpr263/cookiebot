@@ -14,7 +14,7 @@ Releases
 
 * Currently the source code is available at `Github <https://github.com/mjpr263/cookiebot>`_
 * All versions added a composer.json,
-  so you can install different versions of |extension_key| with composer.
+  so you can install different versions of the extension with composer.
 
 Bugs and Known Issues
 ---------------------

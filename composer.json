@@ -1,13 +1,14 @@
 {
     "name": "mjpr/cookiebot",
     "type": "typo3-cms-extension",
-    "description": "Implement cookiebot in TYPO3",
+    "description": "Implement cookiebot (cookiebot.com) consent-banner in TYPO3. Also delivers a content-plugin to place cookiebots cookie declaration whereever you need it.",
     "authors": [
         {
             "name": "Matthias Pruy",
             "role": "Developer"
         }
     ],
+    "license": ["GPL-2.0-or-later"],
     "require": {
         "typo3/cms-core": "^8.7 || ^9.5 || ^10.1"
     },

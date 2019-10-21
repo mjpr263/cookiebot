@@ -37,8 +37,5 @@ Cookiebot extension supports TYPO3 version 8, 9 and upcomming version 10.
 4. Contact
 ==========
 
-* `GitHub project`_
-.. _GitLab project: https://github.com/mjpr263/cookiebot/
-
 * `TYPO3 Extension repository`_
 .. _TYPO3 Extension repository: https://extensions.typo3.org/extension/cookiebot/

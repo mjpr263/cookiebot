@@ -12,7 +12,7 @@ Cookiebot
     en
 
 :Keywords:
-    cookie
+    cookiebot
 
 :Copyright:
     2019

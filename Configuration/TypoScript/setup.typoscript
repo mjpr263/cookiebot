@@ -13,9 +13,8 @@ plugin.tx_cookiebot_cookiebot {
 	}
 }
 
-page.headerData {   
-    600 = TEXT
-    600.value(
-        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="{$plugin.tx_cookiebot_cookiebot.settings.apikey}" data-blockingmode="auto" type="text/javascript"></script>       
-    )    
-}
+page.headTag.append = TEXT
+page.headTag.append.value(
+
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="{$plugin.tx_cookiebot_cookiebot.settings.apikey}" data-blockingmode="auto" type="text/javascript"></script>
+)

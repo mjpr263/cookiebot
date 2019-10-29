@@ -9,7 +9,7 @@ plugin.tx_cookiebot_cookiebot {
         layoutRootPath = EXT:cookiebot/Resources/Private/Layouts/
     }
 	settings {
-		# cat=plugin.tx_cookiebot_cookiebot//a; type=string; label=Cookiebot API-Key
+		# cat=plugin.tx_cookiebot_cookiebot//a; type=string; label=Cookiebot Domaingroup-ID / CBID (00000000-0000-0000-0000-000000000000)
 		apikey = 
 	}
 }

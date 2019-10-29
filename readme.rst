@@ -21,8 +21,8 @@ Install via Extension Manager
 2. Integration
 ==============
 
-To use cookiebot you need a cookiebot-account & api-key.
-If you don't have a cookiebot-account or an api-key you can generate one on https://www.cookiebot.com
+To use cookiebot you need a cookiebot-account & domaingroup-id / CBID.
+If you don't have a cookiebot-account or an domaingroup-id you can generate one on https://www.cookiebot.com
 
 1. Include static template
 2. Add your cookiebot domaingroup-id / CBID (Format: 00000000-0000-0000-0000-000000000000) in the constants-editor or use ``plugin.tx_cookiebot_cookiebot.settings.apikey`` in the constants.

@@ -28,6 +28,7 @@ If you don't have a cookiebot-account or an domaingroup-id you can generate one 
 2. Add your cookiebot domaingroup-id / CBID (Format: 00000000-0000-0000-0000-000000000000) in the constants-editor or use ``plugin.tx_cookiebot_cookiebot.settings.apikey`` in the constants.
 3. After that your cookie consent banner will show up as configured in your cookiebot.com-settings.
 4. Add the plugin ``Cookiebot`` as an content-element on the specific page and at the exact position where you would like the cookie declaration to appear.
+5. (optional) Select cookie blockingmode (automatic cookie blocking or manual cookie blocking) in the constants-editor or use ``plugin.tx_cookiebot_cookiebot.settings.blockingmode`` in the constants. Default-Setting: Automatic cookie blocking. Please note the instructions for manual cookie blocking on https://www.cookiebot.com/en/manual-implementation/
 
 3. TYPO3-Version support
 ========================
@@ -36,6 +37,10 @@ Cookiebot extension supports TYPO3 version 8, 9 and upcomming version 10.
 
 4. Changelog
 ============
+Version 1.1.0
+-------------
+- Now you can change between automatic or manual cookie blocking mode.
+
 Version 1.0.2
 -------------
 - Fixes a wording error in the constants-editor where the "cookiebot API key" was requested. The cookiebot domaingroup-id (CBID) is required here.

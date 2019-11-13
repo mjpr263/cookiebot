@@ -13,8 +13,16 @@ plugin.tx_cookiebot_cookiebot {
 	}
 }
 
-page.headTag.append = TEXT
-page.headTag.append.value(
+[globalVar = LIT:manual = {$plugin.tx_cookiebot_cookiebot.settings.blockingmode}]
+    page.headTag.append = TEXT
+    page.headTag.append.value(
+
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="{$plugin.tx_cookiebot_cookiebot.settings.apikey}" type="text/javascript" async></script>
+    )
+[else]
+    page.headTag.append = TEXT
+    page.headTag.append.value(
 
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="{$plugin.tx_cookiebot_cookiebot.settings.apikey}" data-blockingmode="auto" type="text/javascript"></script>
-)
+    )
+[end]

@@ -1,4 +1,3 @@
-
 plugin.tx_cookiebot_cookiebot {
     view {
         templateRootPaths.0 = EXT:{extension.shortExtensionKey}/Resources/Private/Templates/
@@ -13,16 +12,14 @@ plugin.tx_cookiebot_cookiebot {
 	}
 }
 
-[globalVar = LIT:manual = {$plugin.tx_cookiebot_cookiebot.settings.blockingmode}]
+["{$plugin.tx_cookiebot_cookiebot.settings.blockingmode}" === "manual"]
     page.headTag.append = TEXT
     page.headTag.append.value(
-
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="{$plugin.tx_cookiebot_cookiebot.settings.apikey}" type="text/javascript" async></script>
     )
 [else]
     page.headTag.append = TEXT
-    page.headTag.append.value(
-
+    page.headTag.append.value (
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="{$plugin.tx_cookiebot_cookiebot.settings.apikey}" data-blockingmode="auto" type="text/javascript"></script>
     )
 [end]

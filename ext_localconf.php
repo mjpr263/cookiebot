@@ -1,23 +1,19 @@
 <?php
-defined('TYPO3_MODE') || die('Access denied.');
 
-call_user_func(
-    function()
-    {
+defined('TYPO3_MODE') or die();
 
-        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'MJPR.Cookiebot',
-            'Cookiebot',
-            [
-                'Cookiebot' => 'declaration'
-            ],
-            // non-cacheable actions
-            [
-                'Cookiebot' => ''
-            ]
-        );
+(static function () {
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+        'MJPR.Cookiebot',
+        'Cookiebot',
+        [
+            'Cookiebot' => 'declaration'
+        ],
+        [
+            'Cookiebot' => ''
+        ]
+    );
 
-    // wizards
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
         'mod {
             wizards.newContentElement.wizardItems.plugins {
@@ -36,13 +32,11 @@ call_user_func(
             }
        }'
     );
-		$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
-		
-			$iconRegistry->registerIcon(
-				'cookiebot-plugin-cookiebot',
-				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-				['source' => 'EXT:cookiebot/Resources/Public/Icons/icon_plugin_cookiebot.svg']
-			);
-		
-    }
-);
+
+    $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+    $iconRegistry->registerIcon(
+        'cookiebot-plugin-cookiebot',
+        \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+        ['source' => 'EXT:cookiebot/Resources/Public/Icons/icon_plugin_cookiebot.svg']
+    );
+})();

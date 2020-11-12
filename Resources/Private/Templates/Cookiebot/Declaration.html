@@ -1,12 +1,12 @@
 <html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
 <div id="c{data.uid}">
-	<f:if condition="{CookiebotApiKey} != '0'">
-		<f:then>
-			<script id="CookieDeclaration" src="https://consent.cookiebot.com/{CookiebotApiKey}/cd.js" type="text/javascript" async></script>
-		</f:then>
-		<f:else>
-			<f:translate key="LLL:EXT:cookiebot/Resources/Private/Language/locallang.xlf:apikeyerror" />
-		</f:else>
-	</f:if>
+  <f:if condition="{CookiebotApiKey} != '0'">
+    <f:then>
+      <script id="CookieDeclaration" src="https://consent.cookiebot.com/{CookiebotApiKey}/cd.js" type="text/javascript" async></script>
+    </f:then>
+    <f:else>
+      <f:translate key="LLL:EXT:cookiebot/Resources/Private/Language/locallang.xlf:apikeyerror"/>
+    </f:else>
+  </f:if>
 </div>
 </html>

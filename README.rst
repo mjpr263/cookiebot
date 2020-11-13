@@ -33,7 +33,7 @@ If you don't have a cookiebot-account or an domaingroup-id you can generate one 
 3. TYPO3-Version support
 ========================
 
-Cookiebot extension supports TYPO3 version 8, 9 and upcomming version 10.
+Cookiebot extension supports TYPO3 version 9 & 10.
 
 4. Changelog
 ============

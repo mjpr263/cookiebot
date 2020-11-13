@@ -1,6 +1,8 @@
 <?php
-namespace MJPR\Cookiebot\Controller;
 
+declare(strict_types=1);
+
+namespace MJPR\Cookiebot\Controller;
 
 /***
  *
@@ -12,25 +14,10 @@ namespace MJPR\Cookiebot\Controller;
  *  (c) 2019 Matthias Pruy <dev@mjpr.de>
  *
  ***/
-/**
- * CookiebotController
- */
 class CookiebotController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
-
-    /**
-     * action declaration
-     * 
-     * @return void
-     */
     public function declarationAction()
     {
-		$apikey = $this->settings['apikey'];
-		if($apikey){
-			$this->view->assign('CookiebotApiKey',$apikey);
-		} else {
-			$this->view->assign('CookiebotApiKey',0);
-		}
+        $this->view->assign('CookiebotApiKey', $this->settings['apikey'] ?: 0);
     }
-
 }

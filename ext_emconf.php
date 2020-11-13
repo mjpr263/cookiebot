@@ -11,13 +11,11 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Matthias Pruy',
     'author_email' => 'dev@mjpr.de',
     'state' => 'stable',
-    'uploadfolder' => 0,
-    'createDirs' => '',
     'clearCacheOnLoad' => 1,
     'version' => '1.1.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '8.7.0-10.2.99',
+            'typo3' => '9.5.0-10.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],

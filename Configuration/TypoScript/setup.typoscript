@@ -13,7 +13,7 @@ plugin.tx_cookiebot_cookiebot {
 	}
 }
 
-[globalVar = LIT:manual = {$plugin.tx_cookiebot_cookiebot.settings.blockingmode}]
+["{$plugin.tx_cookiebot_cookiebot.settings.blockingmode}" == "manual"]
     page.headTag.append = TEXT
     page.headTag.append.value(
 
